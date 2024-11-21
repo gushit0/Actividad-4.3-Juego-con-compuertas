@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compuertas Lógicas Interactivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Compuertas Lógicas Interactivas</h1>
+            <p>Explora cómo funcionan las compuertas lógicas en circuitos digitales y realiza pruebas interactivas.</p>
+        </div>
+    </header>
+    <main>
+        <section id="intro" class="container">
+            <h2>¿Qué son las compuertas lógicas?</h2>
+            <p>
+                Las compuertas lógicas son bloques fundamentales en la computación digital. Estas operaciones determinan cómo procesamos 
+                señales binarias (1 o 0) y se utilizan en sistemas electrónicos para resolver problemas lógicos.
+            </p>
+        </section>
+        <section id="examples" class="container">
+            <h2>Ejercicios Interactivos</h2>
+            <div class="example">
+                <h3>Compuerta AND</h3>
+                <p><strong>Operación:</strong> <code>A ∧ B</code></p>
+                <p>El resultado es verdadero (<code>1</code>) solo si ambas entradas son verdaderas (<code>1</code>).</p>
+                <div class="controls">
+                    <label>A: <input type="checkbox" id="and-a" /></label>
+                    <label>B: <input type="checkbox" id="and-b" /></label>
+                    <button onclick="runAnd()">Calcular</button>
+                </div>
+                <p>Resultado: <span id="and-result">-</span></p>
+            </div>
+            <div class="example">
+                <h3>Compuerta OR</h3>
+                <p><strong>Operación:</strong> <code>A ∨ B</code></p>
+                <p>El resultado es verdadero (<code>1</code>) si al menos una de las entradas es verdadera (<code>1</code>).</p>
+                <div class="controls">
+                    <label>A: <input type="checkbox" id="or-a" /></label>
+                    <label>B: <input type="checkbox" id="or-b" /></label>
+                    <button onclick="runOr()">Calcular</button>
+                </div>
+                <p>Resultado: <span id="or-result">-</span></p>
+            </div>
+            <div class="example">
+                <h3>Compuerta NOT</h3>
+                <p><strong>Operación:</strong> <code>¬A</code></p>
+                <p>El resultado invierte la entrada: si es <code>1</code>, devuelve <code>0</code>, y viceversa.</p>
+                <div class="controls">
+                    <label>A: <input type="checkbox" id="not-a" /></label>
+                    <button onclick="runNot()">Calcular</button>
+                </div>
+                <p>Resultado: <span id="not-result">-</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agustin Cali - Proyecto Educativo</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
